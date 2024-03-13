@@ -1,0 +1,77 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+body {
+    background-color:rgba(59, 57, 53, 0.91);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+    max-width: 80rem;
+}
+
+.card {
+    position: relative;
+    left: 20;
+    width: 6rem;
+    border-radius: 1.2rem;
+    height: 20rem;
+    overflow: hidden;
+    background-color: lightsalmon;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+    flex: 0.25;
+}
+
+.card img {
+    position: absolute;
+    height: 20rem;
+    object-fit: cover;  
+     
+}
+
+.card:hover {
+    flex: 2;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+/* polish images center */
+.card:nth-child(1) img {
+    left: -6.5rem;
+}
+
+.card:nth-child(2) img {
+    left: -10rem;
+}
+
+.card:nth-child(3) img {
+    left: -11rem;
+}
+
+.card:nth-child(4) img {
+    left: -8rem;
+}
+
+h1{
+    font-size: 200px;
+    color: rgb(253, 253, 253);
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    font-weight: 500px;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+ }   
+ 
